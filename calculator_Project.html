@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Basic Calculator</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="calculator_Project.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="calculator_Project.js"></script>
+
+</head>
+
+
+<body>
+	<div id="calculator">
+
+<input id="display" type="output" value="0" readonly size="25">
+    <p class="firstLine">
+    <button id="clearButton" onclick='clearAll(0);'>C</button>
+    <button id="ce" onclick='clearerr();'>CE</button>
+    <button id="+/-" onclick='others(+/-);'>+/-</button>
+    <button id="delete" onclick='delete();'>x</button>
+	</p>
+
+    <p class="secondLine">
+    <button id="button7" onclick='numButton(7);'>7</button>
+    <button id="button8" onclick='numButton(8);'>8</button>
+	<button id="button9" onclick='numButton(9);'>9</button>
+	<button id="multiply" onclick='operater("*");'>*</button>
+	</p>
+
+    <p class="thridLine">
+    <button id="button4" onclick='numButton(4);'>4</button>
+	<button id="button5" onclick='numButton(5);'>5</button>
+    <button id="button6" onclick='numButton(6);'>6</button>
+    <button id="divide" onclick='operater("/");'>/</button>
+	</p>
+
+    <p class="fourthLine">
+    <button id="button1" onclick='numButton(1);'>1</button>
+    <button id="button2" onclick='numButton(2);'>2</button>
+    <button id="button3" onclick='numButton(3);'>3</button>
+    <button id="plus" onclick='operater("+");'>+</button>
+	</p>
+
+ 	<p class="fifthLine">
+    <button id="button0" onclick='numButton(0);'>0</button>
+    <button id="buttonDot" onclick='decimal(".");'>.</button>
+    <button id="equals" onclick='calculate();'>=</button>
+    <button id="minus" onclick='operater("-");'>-</button>
+	</p>
+
+</div>
+ </body>
+</html>
